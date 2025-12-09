@@ -1,0 +1,35 @@
+.section_archived_contactsidebar--icons {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgb(29,31,31);
+    color: #FAFAFA; 
+    gap: 15px; 
+}
+
+.section_archived_contactsidebar--icons svg {
+    width: 20px; 
+    height: 20px;
+    fill: #FAFAFA; 
+}
+
+.section_archived_contactsidebar--content {
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Estilo para el texto "Archivados" */
+.section_archived_contactsidebar--contentText{
+    font-size: 16px; 
+    font-weight: 500;
+    margin: 0; 
+}
+
+.section_archived_contactsidebar--contentNumber {
+    font-size: 14px; 
+    color: #FAFAFA;
+    font-weight: 400;
+    margin: 0;
+}
