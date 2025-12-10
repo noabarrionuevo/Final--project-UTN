@@ -9,13 +9,14 @@ function App() {
 
   return (
     <div className="App">
-        <Routes>
-          <Route element={<ContactListContextProvider/>}>
-          <Route path="/" element={<ChatScreens/>}/>
-          <Route path="/chat/:contact_id" element={<ContactDetailContextProvider/>} />
-          <Route path="/chat/:contact_id/messages" element={<MassagesScreen/>} />
+      <Routes>
+        <Route element={<ContactListContextProvider />}>
+          <Route path="/" element={<ChatScreens />} />
+          <Route path="/chat/:contact_id" element={<ContactDetailContextProvider />}>
+            <Route path="/chat/:contact_id/messages" element={<MassagesScreen />}/>
           </Route>
-        </Routes>
+        </Route>
+      </Routes>
     </div>
   )
 }

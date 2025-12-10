@@ -1,5 +1,4 @@
 import React, { use, useContext, useEffect, useState  } from 'react'
-import { useParams } from 'react-router'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import './MassagesScreen.css'
@@ -17,7 +16,7 @@ const {
             {
                 loadingContact 
                 ? <div>Cargando..</div>
-                : <h2>ultimo mensaje: {contactSelected.last_message_content}</h2>
+                : <h2>ultimo mensaje: {contactSelected.contact_name}</h2>
             }
             
         </div>

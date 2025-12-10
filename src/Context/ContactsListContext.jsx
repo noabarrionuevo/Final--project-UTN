@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { Outlet } from "react-router";
 import { getContactList } from "../Service/contactService.js";
 
+
 export const ContactsListContext = createContext()
 
 const ContactsListContextProvider = () => {
