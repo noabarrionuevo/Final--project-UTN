@@ -1,4 +1,4 @@
-import contact_data from "../data/contactData";
+import contact_data from "../Data/contactData";
 
 export function getContactList (){
     /* En un futuro esta funcion haria la llamada al servidor */
