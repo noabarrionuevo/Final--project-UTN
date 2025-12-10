@@ -8,8 +8,8 @@
 }
 
 .section_archived_contactsidebar--icons svg {
-    width: 20px; 
-    height: 20px;
+    width: 18px; 
+    height: 18px;
     fill: #FAFAFA; 
 }
 
@@ -22,13 +22,14 @@
 
 /* Estilo para el texto "Archivados" */
 .section_archived_contactsidebar--contentText{
-    font-size: 16px; 
-    font-weight: 500;
+    font-size: 15px; 
+    color: #FAFAFA;
+    font-weight: 400;
     margin: 0; 
 }
 
 .section_archived_contactsidebar--contentNumber {
-    font-size: 14px; 
+    font-size: 13px; 
     color: #FAFAFA;
     font-weight: 400;
     margin: 0;

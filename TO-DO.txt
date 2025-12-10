@@ -1,0 +1,13 @@
+Completar css
+
+Revisar componentes de SECTIONFIRSTVIEW agregarle el candado de seguridad de los mensajes
+
+Hacer pantalla de carga para que no APAREZCA MAS LO DE LOS CHATS
+
+Mobil and tablet version
+
+Pantalla de los mensajes de texto
+
+Al apretar lso 3 puntitos de la parte superior que aparezcan algunas opciones 
+
+SCROLL BAR FOR THE MESSAGES
