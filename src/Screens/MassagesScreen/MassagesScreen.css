@@ -5,3 +5,6 @@
     display: flex;
     height: 100vh;
 }
+.MassagesScreens_App--loading{
+    background-color:rgb(29,31,31) ;
+}

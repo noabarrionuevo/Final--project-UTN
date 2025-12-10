@@ -6,7 +6,23 @@ const contact_data = [
         contact_unseen_messages: 5,
         last_message_content: 'Hola mundo',
         last_message_state: 'RECEIVED',/*'NOT_SEND' | 'NOT_RECEIVED' | 'RECEIVED' | 'SEEN'*/
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages : [
+            {
+                message_id: 1,
+                message_content: 'Hola Maria',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: true
+            },
+            {   
+                message_id: 2,
+                message_content: 'Hola amigo',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
     {
         contact_id: 2,
