@@ -11,3 +11,7 @@ Pantalla de los mensajes de texto
 Al apretar lso 3 puntitos de la parte superior que aparezcan algunas opciones 
 
 SCROLL BAR FOR THE MESSAGES
+
+agregar contacros por FORMULARIO
+
+arreglar lo de los emnsajes

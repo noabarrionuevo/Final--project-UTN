@@ -1,38 +1,40 @@
-.contactsidebar_App--container{
-    background-color:rgb(29,31,31) ;
+.contactsidebar_App--container {
+    background-color: rgb(29, 31, 31);
     color: #FAFAFA;
 }
+
 .section_archived_contactsidebar--icons {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background-color: rgb(29,31,31);
-    color: #FAFAFA; 
-    gap: 15px; 
+    background-color: rgb(29, 31, 31);
+    color: #FAFAFA;
+    gap: 15px;
 }
+
 .section_archived_contactsidebar--icons svg {
-    width: 18px; 
+    width: 18px;
     height: 18px;
-    fill: #FAFAFA; 
+    fill: #FAFAFA;
 }
 
 .section_archived_contactsidebar--content {
-    display: flex; 
-    flex-grow: 1; 
-    justify-content: space-between; 
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
 }
 
 /* Estilo para el texto "Archivados" */
-.section_archived_contactsidebar--contentText{
-    font-size: 15px; 
+.section_archived_contactsidebar--contentText {
+    font-size: 15px;
     color: #FAFAFA;
     font-weight: 400;
-    margin: 0; 
+    margin: 0;
 }
 
 .section_archived_contactsidebar--contentNumber {
-    font-size: 13px; 
+    font-size: 13px;
     color: #FAFAFA;
     font-weight: 400;
     margin: 0;

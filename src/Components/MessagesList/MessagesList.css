@@ -1,0 +1,67 @@
+.messages-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.message-row {
+    display: flex;
+    width: 100%;
+}
+
+.message-bubble {
+    max-width: 65%;
+    padding: 6px 7px 8px 9px;
+    border-radius: 7.5px;
+    position: relative;
+    font-size: 14.2px;
+    line-height: 19px;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.message-row.sent {
+    justify-content: flex-end;
+}
+
+.message-row.sent .message-bubble {
+    background-color: rgb(20, 77, 55);
+    color: #FAFAFA;
+    border-top-right-radius: 0;
+}
+
+/* Received Messages (Left, Dark Gray) */
+.message-row.received {
+    justify-content: flex-start;
+}
+
+.message-row.received .message-bubble {
+    background-color: #202c33;
+    color: #e9edef;
+    border-top-left-radius: 0;
+}
+
+.message-text {
+    margin-bottom: 2px;
+    word-wrap: break-word;
+}
+
+/* Metadata (Time + Check) */
+.message-meta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    height: 15px;
+}
+
+.timestamp {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3px;
+}
+
+
+.single-check {
+    color: rgba(255, 255, 255, 0.6);
+}
