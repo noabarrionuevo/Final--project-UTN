@@ -10,13 +10,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-
+    padding: 20px 16px;
+    height: 60px;
+    box-sizing: border-box;
 }
 
 .header_contactsearchform h1 {
     color: #FAFAFA;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .header_contactsearchform--button_icons {
@@ -27,6 +30,11 @@
     cursor: pointer;
 }
 
+.header_contactsearchform--button_icons svg {
+    width: 20px;
+    height: 20px;
+}
+
 .searchbar {
     width: 100%;
     padding: 0;
@@ -35,40 +43,49 @@
     border: none;
     background-color: transparent;
     color: #FAFAFA;
-    font-size: 13px;
+    font-size: 15px;
     outline: none;
 }
 
 .searchbar_contactsearchform {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background-color: rgb(46, 47, 47);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 8px 12px;
-    margin: 2px 0;
-    width: auto;
+    margin: 5px 12px;
+    height: 35px;
+    box-sizing: border-box;
 }
 
 .searchbar_contactsearchform svg {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     fill: #FAFAFA;
+    min-width: 24px;
+    margin-left: 10px;
 }
 
 .filter_buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 10px;
     background-color: rgb(29, 31, 31);
-    padding: 2px 0px;
+    padding: 8px 16px;
 }
 
 .filter_buttons button {
     border: none;
     background-color: rgb(46, 47, 47);
     color: #FAFAFA;
-    padding: 5px 20px;
+    padding: 6px 16px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.filter_buttons button:hover {
+    background-color: #374045;
 }

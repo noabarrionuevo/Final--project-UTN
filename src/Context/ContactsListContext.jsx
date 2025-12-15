@@ -46,7 +46,7 @@ const ContactsListContextProvider = () => {
 
     function addNewContact(contact_name, contact_phone) {
         const newContact = {
-            contact_id: contactState.length + 1,
+            contact_id: Date.now(), // Unique ID based on timestamp
             contact_name: contact_name,
             contact_phone: contact_phone || '',
             contact_avatar: 'https://ui-avatars.com/api/?name=' + contact_name,

@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ContactsListContext } from '../../Context/ContactsListContext'
 import './AddContactForm.css'
 
-export default function AddContactForm() {
+export default function AddContactForm({ onCancel }) {
 
     const { addNewContact } = useContext(ContactsListContext)
 

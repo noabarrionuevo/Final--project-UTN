@@ -3,8 +3,8 @@ let contact_data = [
         contact_id: 1,
         contact_name: 'Maria',
         contact_avatar: 'https://clipart-library.com/2023/847-8477662_msn-computer-icons-windows-live-messenger-clip-art.png',
-        contact_unseen_messages: 5,
-        last_message_content: 'Hola mundo',
+        contact_unseen_messages: 1,
+        last_message_content: 'Hola amigo',
         last_message_state: 'RECEIVED',/*'NOT_SEND' | 'NOT_RECEIVED' | 'RECEIVED' | 'SEEN'*/
         last_message_created_at: new Date(),
         messages: [
@@ -31,7 +31,16 @@ let contact_data = [
         contact_unseen_messages: 0,
         last_message_content: 'Que tal?',
         last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages: [
+            {
+                message_id: 2,
+                message_content: 'Que tal?',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
     {
         contact_id: 3,
@@ -40,7 +49,30 @@ let contact_data = [
         contact_unseen_messages: 2,
         last_message_content: 'Que bueno',
         last_message_state: 'RECEIVED',
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages: [
+            {
+                message_id: 1,
+                message_content: 'Muy lindo dia nos toco hoy',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: true
+            },
+            {
+                message_id: 2,
+                message_content: 'Mejor que el sol',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            },
+            {
+                message_id: 3,
+                message_content: 'Que bueno',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
     {
         contact_id: 4,
@@ -48,7 +80,23 @@ let contact_data = [
         contact_avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokZZ8C5Gg1WSTOE9EshNSJYdVKe8acfkcyg&s',
         last_message_content: 'Hola amigo',
         last_message_state: 'RECEIVED',
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages: [
+            {
+                message_id: 1,
+                message_content: 'Hola pedrito',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: true
+            },
+            {
+                message_id: 2,
+                message_content: 'Hola amigo',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
     {
         contact_id: 5,
@@ -57,7 +105,23 @@ let contact_data = [
         contact_unseen_messages: 1,
         last_message_content: 'Que mal',
         last_message_state: 'RECEIVED',
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages: [
+            {
+                message_id: 1,
+                message_content: 'Hola Alan, se cancelo la reunion',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: true
+            },
+            {
+                message_id: 2,
+                message_content: 'Que mal',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
     {
         contact_id: 6,
@@ -66,7 +130,23 @@ let contact_data = [
         contact_unseen_messages: 1,
         last_message_content: 'Que bueno',
         last_message_state: 'RECEIVED',
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        messages: [
+            {
+                message_id: 1,
+                message_content: 'Hola Paula, consegui el trabajo',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: true
+            },
+            {
+                message_id: 2,
+                message_content: 'Que bueno',
+                message_state: 'SEEN',
+                message_created_at: new Date(),
+                message_sent_by_me: false
+            }
+        ]
     },
 ]
 

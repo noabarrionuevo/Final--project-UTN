@@ -3,44 +3,36 @@ aside {
     display: flex;
     flex-direction: column;
     width: 400px;
-}
-.contact-avatar{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow-y: auto;
-    height: calc(100% - 150px);
-}
-.contact-item{
-    color: black;
-    position: relative;
+    /* Base sidebar width */
+    max-width: 450px;
+    border-right: 1px solid rgb(47, 51, 51);
 }
 
 .contactlist_Contacts {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(29,31,31); 
+    background-color: rgb(29, 31, 31);
     color: #FAFAFA;
     flex-grow: 1;
-    overflow-y: auto; 
+    overflow-y: auto;
 
 }
+
 .contact-item {
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 10px 15px;
-    text-decoration: none; 
+    text-decoration: none;
     width: 100%;
     box-sizing: border-box;
 }
 
 .contact-item:hover {
-    background-color: rgb(46,47,47);
+    background-color: rgb(46, 47, 47);
 }
 
-.contact-info{
+.contact-info {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -51,19 +43,20 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 2px;
+    gap: 4px;
     font-size: 13px;
     min-width: 60px;
 }
+
 .contact-avatar {
-    width: 49px; 
+    width: 49px;
     height: 49px;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
-.contact-name{
-    font-size: 17px;
-    font-weight: 500; 
+.contact-name {
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 2px;
     margin: 0;
     color: #FAFAFA;
@@ -72,38 +65,35 @@ aside {
 .name-and-message-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; 
-    min-width: 0; 
+    flex-grow: 1;
+    min-width: 0;
 }
+
 .contact-last-message-content {
-    font-size: 14px;
+    font-size: 15px;
     color: #8696a0;
-    white-space: nowrap; 
+    white-space: nowrap;
     overflow: hidden;
-    /* Agrega text-overflow: ellipsis para mostrar ... cuando el texto se corta */
-    text-overflow: ellipsis; 
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
-.contact-name, .contact-last-message-content {
+
+.contact-name,
+.contact-last-message-content {
     margin: 0;
 }
 
 .contact-unseen-messages {
-    background-color: #00a884; 
-    color: #111b21; 
-    min-width: 22px; 
-    height: 22px; 
+    background-color: #00a884;
+    color: #111b21;
+    min-width: 22px;
+    height: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px; 
+    font-size: 13px;
     font-weight: bold;
-    padding: 1px; 
-    margin-top: 0; 
+    padding: 1px;
+    margin-top: 0;
 }
-
-
-
-

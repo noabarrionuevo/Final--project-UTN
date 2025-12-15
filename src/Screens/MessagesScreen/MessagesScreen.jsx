@@ -20,7 +20,7 @@ export default function MessagesScreen() {
                     ? <h2>Cargando contactos...</h2>
                     : contactSelected
                         ? <div className='MessagesScreens_App--container--section_messages'>
-                            <SectionChatsMessages title={contactSelected.contact_name} />
+                            <SectionChatsMessages title={contactSelected.contact_name} avatar={contactSelected.contact_avatar} />
                         </div>
                         : <h2>Selecciona un contacto para ver los mensajes</h2>
             }
