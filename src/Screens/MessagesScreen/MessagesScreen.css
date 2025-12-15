@@ -15,3 +15,14 @@
     height: 100%;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .MessagesScreens_App--container .contactsidebar_App--container {
+        display: none;
+    }
+
+    .MessagesScreens_App--container--section_messages {
+        width: 100%;
+        display: block;
+    }
+}

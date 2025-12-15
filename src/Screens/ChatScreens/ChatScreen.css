@@ -1,4 +1,4 @@
-.chatScreens_App--container{
+.chatScreens_App--container {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -6,4 +6,9 @@
     height: 100vh;
 }
 
-
+/* Mobile: Show only sidebar, hide placeholder */
+@media (max-width: 768px) {
+    .section_SectionFirstView {
+        display: none;
+    }
+}

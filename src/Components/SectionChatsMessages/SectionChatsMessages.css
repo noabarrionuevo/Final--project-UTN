@@ -24,6 +24,19 @@
     cursor: pointer;
 }
 
+.SectionChatsMessages-header-actions-button,
+.SectionChatsMessages-header-actions__btn-goback {
+    border: none;
+    background: none;
+    color: #FAFAFA;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.SectionChatsMessages-header-actions__btn-goback {
+    display: none;
+}
+
 .SectionChatsMessages-avatar {
     width: 40px;
     height: 40px;
@@ -69,4 +82,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .SectionChatsMessages-header-actions__btn-goback {
+        display: block;
+    }
 }
