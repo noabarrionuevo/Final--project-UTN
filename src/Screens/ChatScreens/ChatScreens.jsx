@@ -7,9 +7,10 @@ export default function ChatScreen() {
     return (
         <div >
             <div className='chatScreens_App--container'>
-                <ContactSidebar/>
-                <SectionFirstView/>
+                <HeaderSideBar />
+                <ContactSidebar />
+                <SectionFirstView />
             </div>
         </div>
-)
+    )
 }

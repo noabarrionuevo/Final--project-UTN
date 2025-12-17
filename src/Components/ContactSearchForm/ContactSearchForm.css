@@ -6,6 +6,10 @@
     padding: 0 15px 10px 1px;
 }
 
+.header_contactsearchform--title {
+    cursor: pointer;
+}
+
 .header_contactsearchform {
     display: flex;
     justify-content: space-between;

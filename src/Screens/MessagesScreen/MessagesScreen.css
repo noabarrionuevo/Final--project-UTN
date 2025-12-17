@@ -25,4 +25,8 @@
         width: 100%;
         display: block;
     }
+
+    .header_HeaderSideBar {
+        display: none;
+    }
 }

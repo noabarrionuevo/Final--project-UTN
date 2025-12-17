@@ -1,12 +1,16 @@
 import React from 'react'
 import './ContactSearchForm.css'
+import { useNavigate } from 'react-router'
 
 export default function ContactSearchForm({ onAddContact }) {
-
+  const navigate = useNavigate();
+  const handleButtomClick = () => { //esta funcion es para que al hacer click en el boton de volver, te redirija a la pantalla de chats
+    navigate('/');
+  };
   return (
     <div className='contactsearchform_ContactSearchForm'>
       <div className='header_contactsearchform'>
-        <h1>Whatsapp</h1>
+        <h1 onClick={handleButtomClick} className='header_contactsearchform--title'>Whatsapp</h1>
         <div className='header_buttons'>
           <button
             onClick={onAddContact} className='header_contactsearchform--button_icons'>

@@ -1,6 +1,7 @@
 import React, { use, useContext, useEffect, useStatet } from 'react'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
+import HeaderSideBar from '../../Components/HeaderSideBar/HeaderSideBar'
 import { ContactsListContext } from '../../Context/ContactsListContext'
 import SectionChatsMessages from '../../Components/SectionChatsMessages/SectionChatsMessages'
 import './MessagesScreen.css'
@@ -14,6 +15,7 @@ export default function MessagesScreen() {
     const { loadingContactsState } = useContext(ContactsListContext)
     return (
         <div className='MessagesScreens_App--container'>
+            <HeaderSideBar />
             <ContactSidebar />
             {
                 loadingContactsState
