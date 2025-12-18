@@ -13,8 +13,8 @@ Para el proyecto final de la cursada decidi crear una replica de whatsapp web en
 3.  *Nuevo Contacto*: Formulario integrado para agregar contactos que se encuentra en la barra de ContactSearchForm y al principio de la pagina cuando se inicia se encuentra un boton debajo al mensaje de bienvenida.
 4.  *Diseño Responsivo*: Adaptable a dispositivos móviles (320px) y escritorio (Desktop First).
 5.  *Detalles*:- Al abrir un chat no leido el estado del mensaje cambia y se le elimina la burbuja con los mensaje no leidos
-- En ContactSearchForm lo que seria nuestro header al apretar la palabra "Whatsapp" te redirige a la pagina de bienvenida
-- En el modo responsive en el chat contas con un flecha para poder ir para atras a la lista de mensajes
+- En ContactSearchForm lo que seria nuestro header al hacerle click a la palabra "Whatsapp" te redirige a la pagina de bienvenida
+- En el modo responsive en el chat contas con un flecha que te redirige a la pantalla principal inicial
 
 ## Dificultades y Soluciones
 
