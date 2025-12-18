@@ -46,10 +46,10 @@ const ContactsListContextProvider = () => {
 
     function addNewContact(contact_name, contact_phone) {
         const newContact = {
-            contact_id: Date.now(), // Unique ID based on timestamp
+            contact_id: Date.now(),
             contact_name: contact_name,
             contact_phone: contact_phone || '',
-            contact_avatar: 'https://ui-avatars.com/api/?name=' + contact_name,
+            contact_avatar: 'https://ui-avatars.com/api/?name=' + contact_name, // genera un avatar con el  nombre
             contact_unseen_messages: 0,
             last_message_content: '',
             last_message_state: 'SEEN',

@@ -25,7 +25,14 @@
     margin: 0;
 }
 
-.header_contactsearchform--button_icons {
+.header_buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* DROPDOWN MENU */
+.header_contactsearchform--button_icons,
+.header_contactsearchform--button_icons--dots {
     border: none;
     background: none;
     color: #FAFAFA;
@@ -33,10 +40,16 @@
     cursor: pointer;
 }
 
-.header_contactsearchform--button_icons svg {
+.header_contactsearchform--button_icons svg,
+.header_contactsearchform--button_icons--dots svg {
     width: 20px;
     height: 20px;
 }
+
+.header_contactsearchform--button_icons--dots--content {
+    display: none;
+}
+
 
 .searchbar {
     width: 100%;
@@ -72,23 +85,25 @@
 
 .filter_buttons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
-    gap: 8px;
+    gap: 6px;
     background-color: transparent;
     padding: 5px 12px;
+    width: 100%;
 }
 
 .filter_buttons button {
     border: none;
     background-color: rgb(46, 47, 47);
     color: #FAFAFA;
-    padding: 6px 16px;
+    padding: 6px 10px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     white-space: nowrap;
-    flex-shrink: 0;
+    flex: 1;
+    min-width: fit-content;
 }
 
 .filter_buttons button:hover {
@@ -98,5 +113,42 @@
 @media (max-width: 768px) {
     .filter_buttons {
         display: none;
+    }
+
+    .header_contactsearchform--button_icons {
+        display: none;
+    }
+
+    .header_contactsearchform--button_icons--dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .header_contactsearchform--button_icons--dots--content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 8px;
+        background-color: rgb(29, 31, 31);
+        min-width: 200px;
+        z-index: 1000;
+        /* Asegúrate de que el dropdown esté por encima de otros elementos */
+        padding: 8px 0;
+    }
+
+    .header_contactsearchform--button_icons--dots--content a {
+        color: #FAFAFA;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .header_contactsearchform--button_icons--dots--content a:hover {
+        background-color: rgb(46, 47, 47);
+    }
+
+    .header_contactsearchform--button_icons--dropdown:hover .header_contactsearchform--button_icons--dots--content {
+        display: block;
     }
 }

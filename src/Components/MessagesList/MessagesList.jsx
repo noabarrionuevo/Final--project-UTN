@@ -6,7 +6,7 @@ import { ContactDetailContext } from '../../Context/ContactDetailContext'
 const MessagesList = () => {
     const { contactSelected } = useContext(ContactDetailContext)
 
-    // Helper to format time (moved outside loop)
+    // ayuda a formatear la hora de envio
     const formatTime = (dateInput) => {
         if (!dateInput) return ''
         const date = new Date(dateInput)

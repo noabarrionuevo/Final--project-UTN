@@ -12,9 +12,11 @@ Para el proyecto final de la cursada decidi crear una replica de whatsapp web en
 2.  *Chat Detallado*: Interfaz de mensajería estilo WhatsApp, ademas de poder mandar mensajes en el chat seleccionado.
 3.  *Nuevo Contacto*: Formulario integrado para agregar contactos que se encuentra en la barra de ContactSearchForm y al principio de la pagina cuando se inicia se encuentra un boton debajo al mensaje de bienvenida.
 4.  *Diseño Responsivo*: Adaptable a dispositivos móviles (320px) y escritorio (Desktop First).
-5.  *Detalles*:- Al abrir un chat no leido el estado del mensaje cambia y se le elimina la burbuja con los mensaje no leidos
+5.  *Detalles*:
+ - Al abrir un chat no leido el estado del mensaje cambia y se le elimina la burbuja con los mensaje no leidos
 - En ContactSearchForm lo que seria nuestro header al hacerle click a la palabra "Whatsapp" te redirige a la pagina de bienvenida
-- En el modo responsive en el chat contas con un flecha que te redirige a la pantalla principal inicial
+- En el modo responsive en el chat contas con un flecha que te redirige a la pantalla principal inici
+- En el modo responsive en ambos modos puedes ver un menu desplegable que te muestra en el caso de SectionChatsMessages las opciones de buscar en el chat, videollamada y mas opciones y en el caso de ContactSearchForm las opciones de agregar contacto, nuevo chat, ajustes, perfil y cerrar sesión 
 
 ## Dificultades y Soluciones
 

@@ -30,7 +30,6 @@
     border-top-right-radius: 0;
 }
 
-/* Received Messages (Left, Dark Gray) */
 .message-row.received {
     justify-content: flex-start;
 }
@@ -46,7 +45,6 @@
     word-wrap: break-word;
 }
 
-/* Metadata (Time + Check) */
 .message-meta {
     display: flex;
     justify-content: flex-end;
@@ -57,11 +55,11 @@
 
 .timestamp {
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #667781;
     margin-top: 3px;
 }
 
 
 .single-check {
-    color: rgba(255, 255, 255, 0.6);
+    color: #667781;
 }
