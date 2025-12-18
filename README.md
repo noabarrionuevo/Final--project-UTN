@@ -15,10 +15,17 @@ Para el proyecto final de la cursada decidi crear una replica de whatsapp web en
 5.  *Detalles*:
  - Al abrir un chat no leido el estado del mensaje cambia y se le elimina la burbuja con los mensaje no leidos
 - En ContactSearchForm lo que seria nuestro header al hacerle click a la palabra "Whatsapp" te redirige a la pagina de bienvenida
-- En el modo responsive en el chat contas con un flecha que te redirige a la pantalla principal inici
-- En el modo responsive en ambos modos puedes ver un menu desplegable que te muestra en el caso de SectionChatsMessages las opciones de buscar en el chat, videollamada y mas opciones y en el caso de ContactSearchForm las opciones de agregar contacto, nuevo chat, ajustes, perfil y cerrar sesión 
+- En el modo responsive en el chat contas con un flecha que te redirige a la pantalla principal 
+- En el modo responsive hay un menu desplegable que te muestra en el caso de SectionChatsMessages las opciones de buscar en el chat, videollamada y mas opciones y en el caso de ContactSearchForm las opciones de agregar contacto, nuevo chat, ajustes, perfil y cerrar sesión (en este ultimo caso la unica opcion que funciona es agregar contacto)
 
 ## Dificultades y Soluciones
 
--   *Estructura del Layout*: Tuve demasiados problemas a la hora de hacer la barra lateral (HeaderSideBar) con su css correspondiente para que no me arruine la sidebar ya que era la principal de la pagina pero gracias a Antigravity puede solucionar problemas simples en el css
--   *Uso de contextos*: Al principio el uso de contextos se me complico bastante ya que al principio cuando los empezamos a utilizar se me rompio toda la pagina, estuve dos dias resolviendo lo problemas pero gracias a eso termine de entender como funcionaban y despues el uso de estos mismo me facilito un monton de cosas, para mi la mas importante fue la legibilidad del codigo ya que todo esta mas organizado 
+-   *Estructura del Layout*: Tuve demasiados problemas a la hora de hacer la barra lateral (HeaderSideBar) con su css correspondiente para que no me arruine la sidebar ya que era la principal de la pagina pero gracias a Antigravity puede solucionar problemas simples en el css.
+-   *Uso de contextos*: Al principio el uso de contextos se me complico bastante ya que al principio cuando los empezamos a utilizar se me rompio toda la pagina, estuve dos dias resolviendo lo problemas pero gracias a eso termine de entender como funcionaban y despues el uso de estos mismo me facilito un monton de cosas, para mi la mas importante fue la legibilidad del codigo ya que todo esta mas organizado.
+-   *Animaciones*: El uso de animaciones siento que tranquilamente podria haberlas no usados pero al inicio de la pagina cuando se muestra el mensaje de bienvenida y esta la carga de la pagina (que lo utilice para que no se vea la carga de los contactos / chats) siento que valio la pena el investigar sobre el tema, se me complicaron al principio pero la verdad son bastante sensillas y facil de entender.
+
+##  Demo
+
+🔗 *[Ver Demo en Vivo](https://final-project-utn.vercel.app)* 
+
+---
