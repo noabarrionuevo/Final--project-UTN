@@ -8,6 +8,7 @@ export default function AddNewMessages() {
     event.preventDefault()
     const messages = event.target.messages.value
     addNewMessage(messages)
+    event.target.reset() // elimina en el formulario el mensaje escrito
   }
 
   return (

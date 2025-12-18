@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { Outlet } from "react-router";
 import { getContactList } from "../Service/contactService.js";
+import LoadingScreen from "../Components/LoadingScreen/LoadingScreen.jsx";
 
 
 export const ContactsListContext = createContext()
@@ -42,7 +43,6 @@ const ContactsListContextProvider = () => {
         setContactState(new_conta)
     }
 
-    /* Crear una funcion llamada addNewContact que reciba el nombre del nuevo contacto y lo agregue al estado de contactos */
 
     function addNewContact(contact_name, contact_phone) {
         const newContact = {
@@ -58,6 +58,22 @@ const ContactsListContextProvider = () => {
         }
         setContactState([...contactState, newContact])
     }
+
+    function markMessagesAsRead(contact_id) {
+        const updatedContacts = contactState.map(
+            (contact) => {
+                if (Number(contact.contact_id) === Number(contact_id)) {
+                    return {
+                        ...contact,
+                        contact_unseen_messages: 0
+                    }
+                }
+                return contact
+            }
+        )
+        setContactState(updatedContacts)
+    }
+
     useEffect(
         loadContactList,
         []
@@ -69,12 +85,14 @@ const ContactsListContextProvider = () => {
         loadContactList,
         addNewContact,
         getContactById,
-        updateContactById
+        updateContactById,
+        markMessagesAsRead
     }
 
 
     return (
         <ContactsListContext.Provider value={providerValues}>
+            {loadingContactsState && <LoadingScreen />}
             <Outlet />
         </ContactsListContext.Provider>
 

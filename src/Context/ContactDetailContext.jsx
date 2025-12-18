@@ -6,8 +6,14 @@ export const ContactDetailContext = createContext()
 const ContactDetailContextProvider = () => {
     const parametros_url = useParams()
     const contact_id = parametros_url.contact_id
-    const { contactState, getContactById, updateContactById } = useContext(ContactsListContext)
+    const { contactState, getContactById, updateContactById, markMessagesAsRead } = useContext(ContactsListContext)
     const contactSelected = getContactById(contact_id)
+
+    useEffect(() => {
+        if (contact_id) {
+            markMessagesAsRead(contact_id)
+        }
+    }, [contact_id])
 
     function addNewMessage(content) {
         const new_message = {
