@@ -37,17 +37,12 @@ export default function ContactSearchForm({ onAddContact }) {
         </svg>
         <input type="text" placeholder='Buscar un chat o iniciar uno nuevo' className='searchbar' />
       </div>
-
-
       <div className='filter_buttons'>
         <button>Todos</button>
         <button>No leidos</button>
         <button>Grupos</button>
         <button>Favoritos</button>
       </div>
-
-
-
     </div>
   )
 }
