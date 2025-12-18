@@ -1,0 +1,22 @@
+# WhatsApp Clone - TP Final UTN Noa Barrionuevo
+Para el proyecto final de la cursada decidi crear una replica de whatsapp web en modo oscuro, ya que se me facilitaba por lo visto en clase y ademas ya tenia una forma de guiarme al tener la pagina oficial para realizar mi propia estructura layout lo que hizo que se me facilitira saber por donde empezar 
+
+## Tecnologías y Librerías
+- **React**
+- **React Router** 
+- **Vite** 
+
+## Funcionalidades Principales
+
+1.  *Lista de Contactos*: Visualización de chats con sus respectivos datos (avatar, nombre, mensaje y estado del mensaje).
+2.  *Chat Detallado*: Interfaz de mensajería estilo WhatsApp, ademas de poder mandar mensajes en el chat seleccionado.
+3.  *Nuevo Contacto*: Formulario integrado para agregar contactos que se encuentra en la barra de ContactSearchForm y al principio de la pagina cuando se incia se encuentra un boton junto al mensaje de bienvenida.
+4.  *Diseño Responsivo*: Adaptable a dispositivos móviles (320px) y escritorio.
+5.  *Detalles*:- Al abrir un chat no leido el estado del mensaje cambia y se le elimina la burbuja con los mensaje no leidos
+- En ContactSearchForm lo que seria nuestro header al apretar la palabra "Whatsapp" te redirige a la pagina de bienvenida
+- En el modo responsive en el chat contas con un flecha para poder ir para atras a la lista de mensajes
+
+## Dificultades y Soluciones
+
+-   *Estructura del Layout*: Tuve demasiados problemas a la hora de hacer la barra lateral (HeaderSideBar) con su css correspondiente para que no me arruine la sidebar ya que era la principal de la pagina pero gracias a Antigravity puede solucionar problemas simples en el css
+-   *Uso de contextos*: Al principio el uso de contextos se me complico bastante ya que al principio cuando los empezamos a utilizar se me rompio toda la pagina, estuve dos dias resolviendo lo problemas pero gracias a eso termine de entender como funcionaban y despues el uso de estos mismo me facilito un monton de cosas, para mi la mas importante fue la legibilidad del codigo ya que todo esta mas organizado 
